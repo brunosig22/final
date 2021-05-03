@@ -1,0 +1,80 @@
+/* adapted from [https://www.youtube.com/watch?v=E621N5GBKv8] */
+@import {
+  @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #343a40;
+  font-family: 'Zen Dots', cursive;
+  background-image: url(https://alumni.wsu.edu/s/1613/images/gid2/editor/mkt_marketing/wallpapers/red_and_white_cougar_head.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 70px;
+  color: #343a40;
+  text-transform: uppercase;
+}
+
+.container {
+  padding: 40px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#board {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+}
+
+.box {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150px;
+}
+
+.box:hover {
+  cursor: pointer;
+}
+
+.box p {
+  font-size: 25px;
+  display: none;
+  color: white;
+}
+
+
+button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #000000;
+  border-color: #343a40;
+  font-size: 18px;
+  transition: 200ms transform;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #343a40;
+  transform: translateY(-2px);
+}
+
+.legend {
+  color: #343a40;
+  font-size: 20px;
+}
